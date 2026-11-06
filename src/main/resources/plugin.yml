@@ -1,0 +1,14 @@
+name: StructureSpawner
+version: ${project.version}
+main: fr.lefilou.structurespawner.StructureSpawnerPlugin
+api-version: '26.3'
+description: Fais apparaitre des structures via un menu avec confirmation.
+commands:
+  structure:
+    description: Ouvre le menu des structures
+    usage: /structure [list|spawn <id>|undo]
+    aliases: [structures, struct]
+permissions:
+  structurespawner.use:
+    description: Utiliser /structure
+    default: op
