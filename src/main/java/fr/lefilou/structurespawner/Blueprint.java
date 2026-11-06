@@ -156,9 +156,9 @@ public final class Blueprint {
     public Blueprint door(int x, int y, int z, Material m, BlockFace facing) {
         Door lower = (Door) m.createBlockData();
         lower.setFacing(facing);
-        lower.setHalf(Bisected.Half.LOWER);
+        lower.setHalf(Bisected.Half.BOTTOM);
         Door upper = (Door) lower.clone();
-        upper.setHalf(Bisected.Half.UPPER);
+        upper.setHalf(Bisected.Half.TOP);
         set(x, y, z, lower);
         return set(x, y + 1, z, upper);
     }
